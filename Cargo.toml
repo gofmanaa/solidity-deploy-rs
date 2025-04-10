@@ -1,0 +1,29 @@
+[package]
+name = "solidity-deploy-rs"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "server"
+path = "server/main.rs"
+
+[[bin]]
+name = "deploy"
+path = "src/main.rs"
+
+[dependencies]
+actix-web = "4.10.2"
+clap = { version = "4.5.35", features = ["derive",  "env"]  }
+ethers = { version = "2.0.14", features = ["solc"] }
+ethers-providers = { version = "2.0.14", features = ["ws"] }
+ethers-solc = { version = "2.0.14", features = ["full"] }
+eyre = "0.6.12"
+tokio = { version = "1.44.2", features = ["rt", "rt-multi-thread", "macros"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+log = "0.4"
+env_logger = "0.11"
+
+[build-dependencies]
+ethers-solc = { version = "2.0.14", features = ["full"] }
+serde_json = "1.0"
