@@ -15,8 +15,8 @@ This project appears to be a Rust application for deploying and interacting with
 
 This project provides two main binaries:
 
-1.  **`deploy`**: Located at `src/main.rs`. Likely used for deploying smart contracts to a blockchain.
-2.  **`server`**: Located at `server/main.rs`. Likely runs a web server (using Actix-web) for interacting with the deployed contracts or managing deployments.
+1.  **`deploy`**: Located at `src/main.rs`. Used for deploying smart contracts to a blockchain.
+2.  **`server`**: Located at `server/main.rs`. Runs a web server (using Actix-web) for interacting with the deployed contracts or managing deployments.
 
 ## Building and Running
 
